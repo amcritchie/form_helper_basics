@@ -1,0 +1,4 @@
+<%= link_to 'Add a Dog', new_dog_path %>
+<% @dogs.each do |dog| %>
+  <%= dog[:name] %>
+<% end %>

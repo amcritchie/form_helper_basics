@@ -1,0 +1,28 @@
+<%= form_for @dog do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <%= f.label :number %>
+  <%= f.telephone_field :number %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :date_of_birth %>
+  <%= f.date_field :date_of_birth %>
+
+  <%= f.label(:adopted, "Check if Adopted") %>
+  <%= f.check_box :adopted %>
+
+  <%= f.label :breed %>
+  <%= f.select "breed", options_for_select(["Beagle", "Cattle Dog", "Golden Retriever"]) %>
+
+  <%= f.submit "Create Dog" %>
+
+<% end %>
