@@ -20,6 +20,9 @@
   <%= f.label(:adopted, "Check if Adopted") %>
   <%= f.check_box :adopted %>
 
+  <%= f.label(:breeder, "Check if From Breeder") %>
+  <%= f.check_box :breeder %>
+
   <%= f.label :breed %>
   <%= f.select "breed", options_for_select(["Beagle", "Cattle Dog", "Golden Retriever"]) %>
 
