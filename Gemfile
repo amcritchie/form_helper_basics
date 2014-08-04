@@ -9,11 +9,12 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'rake', '~> 10.3.1'
 
 group :development, :test do
   gem 'rspec-rails'
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '~> 2.4.1'
 end
